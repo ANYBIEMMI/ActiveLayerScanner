@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ActiveLayerScanner</RootNamespace>
+    <AssemblyName>ActiveLayerScanner</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Version>1.0.0</Version>
+    <Authors>Anita G Biemmi</Authors>
+    <Description>Scans a solution and lists components with an unmanaged Active layer, shows the diff and removes active customizations in bulk.</Description>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <UseWindowsForms>false</UseWindowsForms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Provided by the XrmToolBox host at runtime: do not ship these DLLs. -->
+    <PackageReference Include="XrmToolBoxPackage" Version="1.2025.10.74" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="MscrmTools.Xrm.Connection" Version="1.2025.9.64" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CrmSdk.XrmTooling.CoreAssembly" Version="9.1.1.103" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

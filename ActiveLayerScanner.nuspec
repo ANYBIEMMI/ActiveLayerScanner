@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AnitaGBiemmi.XrmToolBox.ActiveLayerScanner</id>
+    <version>1.0.0</version>
+    <title>Active Layer Scanner</title>
+    <authors>Anita G Biemmi</authors>
+    <owners>Anita G Biemmi</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/ANYBIEMMI/ActiveLayerScanner</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>XrmToolBox tool that scans a solution for components with an unmanaged Active layer, shows the diff against the layer below and removes active customizations in bulk.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <tags>XrmToolBox Dataverse Dynamics365 PowerPlatform Solution Layers</tags>
+    <dependencies>
+      <group targetFramework="net48">
+        <dependency id="XrmToolBoxPackage" version="1.2025.10.74" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="ActiveLayerScanner\bin\Release\net48\ActiveLayerScanner.dll" target="lib\net48\Plugins" />
+  </files>
+</package>
